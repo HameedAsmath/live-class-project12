@@ -173,6 +173,7 @@ header form button {
   padding: 15px;
   width: 300px;
   border-radius: 8px;
+  border: 1px solid #f0f0f0;
 }
 .card p {
   color: #808080;
@@ -211,4 +212,52 @@ footer img {
   color: #fff;
   font-size: 24px;
   margin-bottom: 10px;
+}
+.menu-container {
+  display: none;
+}
+
+/* media queries */
+@media only screen and (max-width: 720px) {
+  .menu-container {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  header section {
+    flex-direction: column;
+    text-align: center;
+  }
+  header form input {
+    margin-right: 20px;
+  }
+  .numbers {
+    flex-direction: column;
+    text-align: center;
+  }
+  .connect-business img {
+    margin: 0px 25px;
+    width: 400px;
+    margin-top: 25px;
+  }
+  .content .banner {
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+  }
+  .banner button {
+    margin-bottom: 25px;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .f-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }
